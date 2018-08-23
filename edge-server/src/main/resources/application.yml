@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+info:
+  name: @project.name@
+  groupId: @project.groupId@
+  artifactId: @project.artifactId@
+  version: @project.version@
+
+zuul:
+  ignored-services: '*'
+  prefix: /api
+  routes:
+    ms1: /ms1/**
+    ms2: /ms2/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "info", "routes", "restart"]
+  endpoint:
+    restart:
+      enabled: true
