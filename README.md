@@ -4,7 +4,7 @@ The edge service (or API gateway) uses Netflix's _Zuul_ service.
 
 The discovery service uses Netflix's _Eureka_ service.
 
-The micro-services uses _OpenFeign_ to create REST clients to service-to-service communication.
+The micro-services use _OpenFeign_ to create REST clients for service-to-service communication.
 
 The discovery service's documentation can be found at **http://localhost:8761**
 
